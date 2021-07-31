@@ -1,6 +1,6 @@
 import unittest
 from locker import User
-from locker import Credentials
+from credentials import Credential
 
 class TestUser(unittest.TestCase):
     '''
@@ -36,6 +36,20 @@ class TestUser(unittest.TestCase):
         '''
         A test class that defines the tests for the credentials
         '''     
+        
+        def setUp(self):
+            '''
+            method that runs before any other test method
+            '''
+            self.new_credential = Credential('facebook', 'fkinyae', 'hvjtevks')
+            
+            def test_init(self):
+                '''
+                test case that confirms proper initialization of new instances
+                '''
+                self.new_credential(self.new_credential.account, 'facebook')
+                self.assertEqual(self.new_credential.username, 'fkinyae')
+                self.assertEqual(self.new_credential.password, 'hvjtevks')
             
     if __name__ == '_main_':
         unittest.main()        
