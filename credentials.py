@@ -47,7 +47,7 @@ def generate_password(self,length):
     letters = string.ascii_lowercase
     result_str = ' '.join(random.choice(letters) for i in range(length))
     print("Random string of  length", length, "is:", result_str)
-generate_password(8)
+generate_password(8,6)
 
 @classmethod     
 def search_credential(cls, account):
@@ -62,5 +62,12 @@ def search_credential(cls, account):
 def copy_password(cls, account):
     exist_credentials = Credential.search_credential(account)
     pyperclip.copy(exist_credentials.password)     
+    
+@classmethod
+def display_credentials(cls):
+    '''
+    method that returns all items in the credentials list
+    '''
+    return cls.credentials_list
     
         
