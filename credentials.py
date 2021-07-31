@@ -31,3 +31,11 @@ def save_credentials(self):
         '''   
         Credential.credentials_list.append(self)
         
+def delete_credentials(self):
+    '''
+    method that deletes account credentials
+    '''   
+    Credential.credentials_list.remove(self)
+     
+    
+        
