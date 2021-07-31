@@ -50,6 +50,12 @@ class TestUser(unittest.TestCase):
                 self.new_credential(self.new_credential.account, 'facebook')
                 self.assertEqual(self.new_credential.username, 'fkinyae')
                 self.assertEqual(self.new_credential.password, 'hvjtevks')
+                
+            def tearDown(self): 
+                '''
+                this method cleans up the test cases after they have run
+                '''
+                Credential.credentials_list = []  
             
     if __name__ == '_main_':
         unittest.main()        
