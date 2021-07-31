@@ -31,3 +31,20 @@ class User:
         '''
         User.user_list.remove(self)
         
+        class Credentials:
+            '''
+            the blueprint for creating new objects for credentials
+            '''
+            credentials_list = []
+            
+    @classmethod
+    def confirm_users(cls, username, password):
+        '''
+        method to confirm the user exists in the list
+        '''
+        current_user = ''
+        for user in User.user_list:
+            if(user.username == username and user.password == password):
+                current_user = user.username
+                return current_user
+        
