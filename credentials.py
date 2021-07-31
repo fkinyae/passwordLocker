@@ -1,4 +1,6 @@
- from locker import User
+import random
+import string
+from locker import User
  
 class Credential:
             '''
@@ -36,6 +38,15 @@ def delete_credentials(self):
     method that deletes account credentials
     '''   
     Credential.credentials_list.remove(self)
+    
+def generate_password(self,length):
+    '''
+    method for generating passwords for the accounts
+    '''   
+    letters = string.ascii_lowercase
+    result_str = ' '.join(random.choice(letters) for i in range(length))
+    print("Random string of  length", length, "is:", result_str)
+generate_password(8)
      
     
         
