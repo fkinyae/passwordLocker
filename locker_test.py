@@ -1,5 +1,6 @@
 import unittest
 from locker import User
+from locker import Credentials
 
 class TestUser(unittest.TestCase):
     '''
@@ -30,6 +31,11 @@ class TestUser(unittest.TestCase):
             test that returns list of all users saved
             '''
             self.assertEqual(User.display_users(), User.user_list)
+            
+    class test_Credentials(unittest.TestCase):
+        '''
+        A test class that defines the tests for the credentials
+        '''     
             
     if __name__ == '_main_':
         unittest.main()        
