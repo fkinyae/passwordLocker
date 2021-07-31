@@ -47,4 +47,12 @@ class User:
             if(user.username == username and user.password == password):
                 current_user = user.username
                 return current_user
+            
+    def __init__(self, account, username, password):
+        '''
+        method that defines the types of user credentials to be saved
+        '''   
+        self.account = account
+        self.username = username
+        self.password = password
         
