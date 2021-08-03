@@ -25,5 +25,12 @@ class TestCredential(unittest.TestCase):
         self.assertEqual(self.new_credential.userName,"mumo")
         self.assertEqual(self.new_credential.passWord,"klmnopqrstuv")  
         
+    def test_save_credential(self):
+        '''
+        method to test whether new instances are being saved 
+        '''   
+        self.new_credential.save_credential()
+        self.assertEqual(len(Credential.credentials_list),1)
+        
 if __name__ == '__main__':
     unittest.main()        
