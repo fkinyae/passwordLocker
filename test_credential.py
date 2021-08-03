@@ -9,3 +9,9 @@ class TestCredential(unittest.TestCase):
         '''
         method to run before each test case 
         '''
+        
+    def tearDown(self):
+        '''
+        cleans up after each testcase has run
+        '''
+        Credential.credentials_list = []
