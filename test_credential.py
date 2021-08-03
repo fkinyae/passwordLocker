@@ -24,3 +24,6 @@ class TestCredential(unittest.TestCase):
         self.assertEqual(self.new_credential.account,"Twitter")
         self.assertEqual(self.new_credential.userName,"mumo")
         self.assertEqual(self.new_credential.passWord,"klmnopqrstuv")  
+        
+if __name__ == '__main__':
+    unittest.main()        
