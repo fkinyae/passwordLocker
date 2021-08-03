@@ -12,4 +12,7 @@ class Credential:
         '''  
         firstuser = ""   
         for user in User.users_list:
+            if (user.username == username and user.password == password ):
+                firstuser == user.username
+        return firstuser        
             
