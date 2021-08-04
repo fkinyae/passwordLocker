@@ -51,3 +51,16 @@ def check_credential_existence(account):
     Function that checks the existence of a credential
     '''
     return Credential.find_credential(account)
+
+def display_my_credentials():
+    '''
+    Function to display my credentials
+    '''
+    return Credential.display_credentials()
+
+def generate_password():
+    '''
+    generates random passwords
+    '''
+    get_password = Credential.gen_password()
+    return get_password
