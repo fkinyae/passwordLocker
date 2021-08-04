@@ -44,6 +44,10 @@ def find_a_credential(account):
       '''
       Function that searches for credentials
       '''
-      return Credential.find_credential(account)
+      return Credential.find_by_account(account)
 
-def
+def check_credential_existence(account):
+    '''
+    Function that checks the existence of a credential
+    '''
+    return Credential.find_credential(account)
