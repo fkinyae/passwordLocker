@@ -39,3 +39,5 @@ def delete_credential(credential):
     Function to delete credential
     '''    
     credential.delete_credential()
+    
+def find_a_credential():    
