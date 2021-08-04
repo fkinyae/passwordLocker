@@ -40,4 +40,7 @@ def delete_credential(credential):
     '''    
     credential.delete_credential()
     
-def find_a_credential():    
+def find_a_credential(account):  
+      '''
+      Function that searches for credentials
+      '''
