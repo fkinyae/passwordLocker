@@ -64,3 +64,16 @@ def generate_password():
     '''
     get_password = Credential.gen_password()
     return get_password
+
+def main():
+    print("Hi.. Welcome to Password Locker  your modern passwords store! What is your name? ")
+    user_name = input()
+    
+    print(f"Hello { user_name } , What can I do for you today? ")
+    print('\n')
+    
+    while True:
+                    print("Use the following short codes to perform your operation: cc - create a new user account,  ")
+    
+if __name__ == '__main__':
+    main()    
