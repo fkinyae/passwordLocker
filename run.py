@@ -25,4 +25,5 @@ def user_login(username, password):
     '''
     check user authentication
     '''  
-      authenticate_user = 
+    authentic_user =  Credential.authenticate_user(username, password)
+    return authentic_user
