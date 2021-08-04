@@ -21,8 +21,8 @@ def del_user(user):
     '''  
     user.delete_user()
     
-def user_login():
+def user_login(username, password):
     '''
     check user authentication
     '''  
-      
+      authenticate_user = 
