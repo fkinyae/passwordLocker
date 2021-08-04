@@ -73,7 +73,13 @@ def main():
     print('\n')
     
     while True:
-                    print("Use the following short codes to perform your operation: cc - create a new user account,  ")
+                    print("Use the following short codes to perform your operation: cc - create a new user account,   ")
+                    short_code = input("").lower().strip()
+                    
+                    if short_code == "ca":
+                        print("Create An Account")
+                        print('*' * 50)
+                        username = input("User_name: ")
     
 if __name__ == '__main__':
     main()    
