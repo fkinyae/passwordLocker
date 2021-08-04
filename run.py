@@ -27,3 +27,15 @@ def user_login(username, password):
     '''  
     authentic_user =  Credential.authenticate_user(username, password)
     return authentic_user
+
+def save_credential(credential):
+    '''
+    Function to save credential
+    '''
+    credential.save_credential()
+    
+def delete_credential(credential):
+    '''
+    Function to delete credential
+    '''    
+    credential.delete_credential()
